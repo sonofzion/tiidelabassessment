@@ -57,7 +57,7 @@
                 Registration Form
             </h3>
 
-            <form action="" onsubmit="processform()" name="signupform" id="signupform">
+            <form action="" onsubmit="processform()" name="signupform" id="signupform" method="POST" data-netlify="true">
 
                 <input type="text" name="fullname" id="fullname" placeholder="Enter your full name" required>
                 <input type="email" name="email" id="email" placeholder="Enter your email address" required>
@@ -69,13 +69,13 @@
         </div>
         <div style="clear: left;"></div>
     </div>
-    <script>
-        function processform(){
-        fullname = document.getElementById('fullname').value
-        username = document.getElementById('username').value
-        password = document.getElementById('password').value
-        cpassword = document.getElementById('confirmpassword').value
-        email = document.getElementById('email').value
+     <script>
+      //  function processform(){
+      //  fullname = document.getElementById('fullname').value
+       // username = document.getElementById('username').value
+       // password = document.getElementById('password').value
+       // cpassword = document.getElementById('confirmpassword').value
+       // email = document.getElementById('email').value
 
         if(password != cpassword){
             alert("password mismatch")
